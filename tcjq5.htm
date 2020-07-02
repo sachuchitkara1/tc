@@ -1,0 +1,29 @@
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function()
+{
+$("#b1").click(function()
+{
+$("p").prepend("<b>Hello TC</b>");
+});
+$("#b2").click(function()
+{
+$("ol").prepend("<li>Hello TC</li>");
+});
+
+});
+</script>
+</head>
+<body>
+<p>Hello How are you</p>
+<ol>
+<li>Hello World</li>
+</ol>
+<button id="b1">AT</button>
+<button id="b2">AL</button>
+</body>
+</html>

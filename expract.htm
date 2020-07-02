@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>TC
+</title>
+</head>
+<body>
+<table>
+<tr>
+<td>fIRST nAME</td> <td><input type="text" name="name" id="t1"><span id="t7"></span></td>
+</tr>
+
+<tr>
+<td>LaST nAME</td> <td><input type="text" name="lname" id="t2"><span id="t8"></span></td>
+</tr>
+<tr>
+<td>Email Id</td> <td><input type="text" name="name" id="t3"><span id="t9"></span></td>
+</tr>
+
+<tr>
+<td>User Id</td> <td><input type="text" name="name" id="t4"><span id="t10"></span></td>
+</tr>
+
+<tr>
+<td>Password</td> <td><input type="password" name="name" id="t5"><span id="t11"></span></td>
+</tr>
+<tr>
+<td>Confirm Password</td> <td><input type="password" name="name" id="t6"><span id="t12"></span></td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" onclick="f()"></td>
+</tr>
+<script>
+function f()
+{
+var x=document.getElementById("t1").value;
+if(x=="")
+document.getElementById("t7").innerHTML="Please Enter Your First Name";
+else
+document.getElementById("t7").innerHTML="OK";
+
+var y=document.getElementById("t2").value;
+if(y=="")
+document.getElementById("t8").innerHTML="Please Enter Your First Name";
+else
+document.getElementById("t8").innerHTML="OK";
+
+var z=document.getElementById("t3").value;
+if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(z))
+document.getElementById("t9").innerHTML="Valid";
+else
+document.getElementById("t9").innerHTML="InValid";
+
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+class animal
+{
+    animal()
+    {
+        System.out.println("Eating");
+    }
+}
+class dog extends animal
+{
+    dog()
+    {
+        System.out.println("Barking");
+    }
+}
+class babydog extends dog
+{
+    babydog()
+    {
+        System.out.println("Weeping");
+    }
+}
+public class main
+{
+    public static void main(String args[])
+    {
+        babydog b=new babydog();
+   
+    }
+}
+
+
+class calculation
+{
+    int x,y;
+    calculation(int x,int y)
+    {
+        this.x=x;
+        this.y=y;
+    }
+    void addition()
+    {
+        int z;
+        z=x+y;
+        System.out.println("Addition:"+z);
+    }
+    void subtraction()
+    {
+        int z;
+        z=x-y;
+        System.out.println("Subtraction:"+z);
+    }
+}
+class mycalc extends calculation
+{
+    int r,s;
+    mycalc(int x,int y)
+    {
+        super(x,y);
+        r=x;
+        s=y;
+    }
+    void multiplication()
+    {
+        int t=r*s;
+        System.out.println("Multiplication:"+t);
+    }
+}
+
+public class MyClass {
+    
+    public static void main(String args[]) {
+   
+mycalc mc=new mycalc(10,12);
+mc.addition();
+mc.subtraction();
+mc.multiplication();
+
+ 
+    }
+}
+
+
+
+ //Single inheritence
+ class TCroom {
+    int len=5;
+    int wid=10;
+    TCroom(int x,int y)
+    {
+        len=x;
+        wid=y;
+    }
+    int area()
+    {
+        return len*wid;
+    }
+}
+class TCbedroom extends TCroom
+{
+    int height=15;
+    TCbedroom(int x,int y,int z)
+    {
+        super(x,y);
+        height=z;
+    }
+    int volume()
+    {
+        return len*wid*height;
+    }
+}
+public class TCmain{
+    public static void main(String args[]) {
+  
+TCbedroom bd=new TCbedroom(5,10,15);
+int a=bd.area();
+int b=bd.volume();
+System.out.println("Area:"+a);
+System.out.println("Volume:"+b);
+    }
+}
+
+
+
+ //Single inheritence
+ class TCroom {
+    int len=5;
+    int wid=10;
+    int area()
+    {
+        return len*wid;
+    }
+}
+class TCbedroom extends TCroom
+{
+    int height=15;
+    int volume()
+    {
+        return len*wid*height;
+    }
+}
+public class TCmain{
+    public static void main(String args[]) {
+  
+TCbedroom bd=new TCbedroom();
+int a=bd.area();
+int b=bd.volume();
+System.out.println("Area:"+a);
+System.out.println("Volume:"+b);
+    }
+}
+
+
+
+
+class Super
+{
+    int x;
+    Super(int x)
+    {
+        this.x=x;
+        
+    }
+    void display()
+    {
+        System.out.println("Super x:"+x);
+    }
+}
+class sub extends Super
+{
+    int y;
+    sub(int x,int y)
+    {
+    super(x);
+    this.y=y;
+    }
+    void display()
+    {
+        System.out.println("Super:"+x);
+              System.out.println("Sub:"+y);
+        
+    }
+}
+
+public class MyClass {
+    public static void main(String args[]) {
+Super s1=new Super(100);
+s1.display();
+    }
+}

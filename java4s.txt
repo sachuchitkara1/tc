@@ -1,0 +1,102 @@
+public class MyClass {
+    static int a=3;
+    static int b;
+    static void meth(int x)
+    {
+        System.out.println("x:"+x);
+         System.out.println("a:"+a);
+          System.out.println("b:"+b);
+    }
+    static
+    {
+         System.out.println("static Block");
+         b=a*4;
+    }
+    static
+{
+     System.out.println("Hello TC");
+    a=8;
+    b=20;
+}
+    
+    
+    public static void main(String args[]) {
+        meth(42);
+    
+    }
+}
+
+public class TC1
+{
+    public static void main(String[] args)
+    {
+        int a1,a2;
+        TC r1=new TC();
+        TC r2=new TC();
+        r1.len=15;
+        r1.bre=10;
+        a1=r1.len*r1.bre;
+        r2.getdata(20,12);
+        a2=r2.rectArea();
+        System.out.println("Area 1:  "+a1);
+              System.out.println("Area 2:  "+a2);
+        
+    }
+}
+ class TC {
+    int len,bre;
+    void getdata(int x,int y)
+    {
+        len=x;
+        bre=y;
+    }
+    int rectArea()
+    {
+        int area=len*bre;
+        return area;
+    }
+}
+
+    
+
+
+import java.util.*;
+
+public class MyClass {
+    public int max(int []arr)
+    {
+        int m=-344;
+        for(int i=0;i<arr.length;i++)
+        {
+            if(arr[i]>m)
+            {
+                m=arr[i];
+            }
+        }
+        return m;
+        
+    }
+    public int min(int []arr)
+    {
+        int m=9999;
+        for(int i=0;i<arr.length;i++)
+        {
+            if(arr[i]<m)
+            m=arr[i];
+        }
+        return m;
+    }
+    public static void main(String args[]) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Size of array:");
+        int size=sc.nextInt();
+        int []a=new int[size];
+        System.out.println("Enter Elements:");
+        for(int i=0;i<size;i++)
+        a[i]=sc.nextInt();
+        MyClass t=new MyClass();
+        System.out.println("Max:"+t.max(a));
+            System.out.println("Min:"+t.min(a));
+ 
+    }
+}

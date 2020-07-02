@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>TC</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function()
+{
+$("#b1").click(function()
+{
+$("#p1".text("Hello TC!"));
+});
+
+$("#b2").click(function()
+{
+$("#p2".html("<b>Hello TC!</b>"));
+});
+$("#b3").click(function()
+{
+$("#p3".val("TC Yay"));
+});
+});
+</script>
+</head>
+<body>
+<p id="p1">Hello My name is Sourav Sharma</p>
+<p id="p2">hello My name is TC</p>
+<p><input type="text" value="Sourav" name="Sourav Sharma"></p>
+<button id="b1">Set text</button>
+<button id="b2">Set HTML</button>
+<button id="b3">Set Value</button>
+</body>
+</html>

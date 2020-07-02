@@ -1,0 +1,343 @@
+<html>
+<head>
+<title>TCsup</title>
+<style>
+.t
+{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  }
+  body{
+  background-color:#f0f0f1;
+  }
+  .t1
+  {
+  color:red;
+  }
+  .t2
+  {
+    background-color: red;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:14px;
+  }
+   .t3
+  {
+  background-color:black;
+  height:55px;
+  color:white;
+  
+  }
+  .t4
+  {
+  font-size:15px;
+  margin-left:140px;
+
+  }
+  .t5{
+   font-size:10px;
+   
+}
+ .t411{
+	    font-size:15px;
+	  }
+	  .t6
+{
+height:250px;
+}
+.t7
+{
+ background-color:#f0f0f1
+  border-style:solid red 1px;
+  color: white;
+  padding: 08px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 3px 1px;
+  border-radius:14px;
+  color:black;
+  margin-left:300px;
+  }
+  .t8{
+  font-size:30px;
+  margin-left:140px;
+  }
+  .t9{
+  margin-left:140px;
+  font-family:Courier New;
+  }
+  .t11
+  {
+    margin-left:190px;
+font-family:Courier New;
+	}
+	  .t12
+  {
+    margin-left:210px;
+font-family:Courier New;
+	}
+	.tt
+	{
+	margin-left:250px;
+	color:red;
+	}
+	.t11
+  {
+    margin-left:190px;
+font-family:Courier New;
+	}
+	  .t12
+  {
+    margin-left:210px;
+font-family:Courier New;
+	}
+	.t13{
+	  margin-left:140px;
+	  }
+	  .t411{
+	    font-size:15px;
+	  }
+	  .t10{
+	  height:250px;
+	  background-color:white;
+	  }
+	  .t14{
+	    background-color: white;
+ 
+  border: 1px solid red;
+
+  color: red;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:14px;
+  margin-left:140px;
+  }
+  .t15
+  {
+  text-decoration:none;
+  margin-left:10px;
+  color:black;
+  }
+  
+   .t16
+  {
+  text-decoration:none;
+  margin-left:250px;
+    color:black;
+  }
+
+  .t17
+  {
+  color:black;
+    text-decoration:none;
+	}
+  .t17:hover
+  {
+  color:green;
+  }
+  .t18
+  {
+  font-family:Roman New;
+  font-size:30px;
+  margin-left:540px;
+  }
+  .t19
+  {
+  margin-left:140px;
+  }
+  .t20
+  {
+  width:790px;
+  }
+  .t21{
+  cursor:crosshair;
+  }
+</style>
+</head>
+<body>
+
+<div class="t20">
+<form action="tcdata.html">
+<div>
+<table class="t19">
+<tr>
+<td><span id="ti"></span>First Name</td>
+<tr>
+<td><br></td>
+</tr>
+</tr>
+
+<tr>
+<td><input type="text" name="Userid" class="t" placeholder="First name" required></td>
+</tr>
+
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td><span id="ti"></span>Last Name</td>
+<tr>
+<td><br></td>
+</tr>
+</tr>
+
+<tr>
+<td><input type="text" name="Userid" class="t" placeholder="Last name"></td>
+</tr>
+
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td><input type="email" name="email" class="t" placeholder="User@tc.com"></td>
+</tr>
+
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td><span id="ti"></span>Phone No.</td>
+<tr>
+<td><br></td>
+</tr>
+</tr>
+
+<tr>
+<td><input type="tel" name="Userid" class="t" placeholder="9882547541" pattern="[0-9]{4}-[0-9]{6}" required></td>
+</tr>
+
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+
+<td>Password</td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td><input type="Password" name="pass"  class="t" id="mypass" required ></td>
+</tr>
+
+<tr>
+<td><input type="checkbox" name="passw" class="t" onclick="go()"> Show Password</td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td><span id="ti"></span>Confirm Password</td>
+<tr>
+<td><br></td>
+</tr>
+</tr>
+
+<tr>
+<td><input type="password" name="pass" class="t" id="mypass1" required onblur="go1()"></td>
+</tr>
+
+<tr>
+<td><br></td>
+</tr>
+<tr>
+<td><br></td>
+</tr>
+
+<td><input type="submit" name="Sign in" value="Sign up" onclick="window.location.href =''" class="t2" formtarget="_parent"  >
+</td>
+</tr>
+</table>
+</form>
+<br>
+<br>
+<br>
+</div>
+<div class="t3"><br><marquee behavior="scroll" direction="left" scrollamount="12"><strong class="t4">From Now You are only one step away to Enjoy TC</strong><span class="t5">&reg;</span> <strong class="t411">Services<strong><strong class="t4">From Now You are only one step away to Enjoy TC</strong><span class="t5">&reg;</span> <strong class="t411">Services<strong><strong class="t4">From Now You are only one step away to Enjoy TC</strong><span class="t5">&reg;</span> <strong class="t411">Services<strong><strong class="t4">From Now You are only one step away to Enjoy TC</strong><span class="t5">&reg;</span> <strong class="t411">Services<strong></marquee></div>
+<div class="t6"><br><br>
+<span class="tt">Already Have an Account?</span><br>
+<a href="TCloinimg.html" target="_parent"><button class="t7" ><b>Sign in</b></button></a>
+<br>
+<br>
+<span class="t8">Sign in Now To Enjoy TC&reg; Services</span>
+<br><br>
+<b>
+<span class="t9">We always try to make our Customers Happy by Providing</span><br>
+<span class="t11">Our Services @ lowest price Ever<br></span><span class="t12">So Let's Enjoy Your Day.</span></b>
+</div>
+<div class="t10">
+<br>
+<br>
+<br>
+<a href="https://www.google.com/maps" target="_blank" class="t21"><button class="t14">Find a store</button></a>
+<span class="t15"><a href="" class="t17">Responsibilities</a></span>
+<br>
+<span class="t16"><a href="" class="t17">Web Accessibility</a></span>
+<br>
+<br>
+<span class="t16"><a href="" class="t17">Our Policy</a></span>
+
+<br>
+<br>
+<span class="t16"><a href="" class="t17">Terms of use</a></span>
+<br>
+<br>
+<span class="t18">&copy;2019 TC</span>
+</div>
+
+</div>
+
+<script>
+function go()
+{
+  var x = document.getElementById("mypass");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+function go1()
+{
+var x1=document.getElementById("mypass");
+
+var x=document.getElementById("mypass1");
+
+
+if(x.value!=x1.value)
+{
+alert("Oh ho! TC looks that you Entered the different Password");
+}
+x.onchange = validatePassword;
+x1.onkeyup = validatePassword;
+
+}
+
+</script>
